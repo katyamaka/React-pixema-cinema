@@ -9,7 +9,7 @@ export interface ShortSearchMovies {
   Title: string;
   Year: string;
   imdbID: string;
-  Type: string;
+  Genre: string;
   Poster: string;
 }
 
