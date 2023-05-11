@@ -8,4 +8,4 @@ import {
   SignInPage,
   SignUpPage,
   TrendsPage,
-} from "pages";
+} from "../pages";
