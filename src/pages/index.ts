@@ -1,5 +1,5 @@
 import { HomePage } from "./HomePage/HomePage";
-import { FavoritesPage } from "./FavoritesPage/FavoritesPage";
+import { FavouritesPage } from "./FavoritesPage/FavoritesPage";
 import { MovieDetailsPage } from "./MovieDetailsPage/MovieDetailsPage";
 import { ResetPasswordPage } from "./ResetPasswordPage/ResetPasswordPage";
 import { SearchPage } from "./SearchPage/SearchPage";
@@ -10,7 +10,7 @@ import { TrendsPage } from "./TrendsPage/TrendsPage";
 
 export {
   HomePage,
-  FavoritesPage,
+  FavouritesPage,
   TrendsPage,
   ResetPasswordPage,
   SearchPage,
