@@ -7,3 +7,15 @@ import { ReactComponent as BurgerIcon } from "./icons/burger.svg";
 import { ReactComponent as PixemaLightIcon } from "./icons/pixema-logo-light.svg";
 import { ReactComponent as PixemaDarkIcon } from "./icons/pixema-logo-dark.svg";
 import empty from "./images/empty-search-result.png";
+
+export {
+  HomeIcon,
+  TrendsIcon,
+  FavoritesIcon,
+  SettingsIcon,
+  UserIcon,
+  BurgerIcon,
+  PixemaLightIcon,
+  PixemaDarkIcon,
+  empty,
+};
