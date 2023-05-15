@@ -11,4 +11,13 @@ export enum Color {
   Green = "#00A340",
   Yellow = "#F3A608",
   Orange = "#F45D2D",
+  Errors = "#FF5154",
+  Label_Text = "var(--label-text)",
+  Primary_BG = "var(--bg-primary)",
+  Primary_TX = "var(--primary)",
+  Primary_TEXT = "var(--primary-text)",
+  Primary_TEXT_LIGHT = "var(--primary-text-light)",
+  Primary_INPUT_BG = "var(--primary-input-bg)",
+  Primary_INPUT_BORDER = "var(--primary-input-border)",
+  Primary_FORM_BG = "var(--primary-form-bg)",
 }
