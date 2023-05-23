@@ -4,11 +4,11 @@ import {
   FavoritesIcon,
   SettingsIcon,
 } from "../../assets";
-import { CustomLink, CustomNavLink, Divider, Footer } from "components";
+import { CustomLink, CustomNavLink, Divider, Footer } from "../../components";
 import { ROUTE } from "../../routes";
 import { LogOut, NavStyled, User, Username } from "./style";
-import { logoutUser, useTypedDispatch, useTypedSelector } from "store";
-import { useWindowSize } from "hooks";
+import { logoutUser, useTypedDispatch, useTypedSelector } from "store"; фиксить во второй папке
+import { useWindowSize } from "../../hooks/useWindowSize";
 
 export const Nav = () => {
   const isMobileMenuOpen = useTypedSelector((state) => state.mobileMenu.isOpen);
