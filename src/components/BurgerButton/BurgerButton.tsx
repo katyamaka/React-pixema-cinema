@@ -1,5 +1,5 @@
 import { Button } from "../../components";
-import { setIsOpen, useTypedDispatch, useTypedSelector } from "store";
+import { setIsOpen, useTypedDispatch, useTypedSelector } from "../../store"; переделать во второй папке
 import { BurgerIcon, CloseIcon } from "../../assets";
 
 export const BurgerButton = () => {

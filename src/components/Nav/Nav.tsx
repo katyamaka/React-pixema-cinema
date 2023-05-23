@@ -7,7 +7,7 @@ import {
 import { CustomLink, CustomNavLink, Divider, Footer } from "../../components";
 import { ROUTE } from "../../routes";
 import { LogOut, NavStyled, User, Username } from "./style";
-import { logoutUser, useTypedDispatch, useTypedSelector } from "store"; фиксить во второй папке
+import { logoutUser, useTypedDispatch, useTypedSelector } from "../../store"; фиксить во второй папке
 import { useWindowSize } from "../../hooks/useWindowSize";
 
 export const Nav = () => {
