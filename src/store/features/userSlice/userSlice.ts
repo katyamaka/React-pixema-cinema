@@ -11,7 +11,7 @@ import {
   updateUserSettings,
   getFirebaseErrorMessage,
   sendResetPasswordEmail,
-} from "services/firebaseApi";
+} from "services/firebaseApi"; это мы пофиксим
 import { RootState } from "../../store";
 
 interface UserState {

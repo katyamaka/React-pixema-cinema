@@ -23,6 +23,8 @@ export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route element={<MainTemplate />}>
+        {" "}
+        вставить из второй папки
         <Route path={ROUTE.HOME} element={<HomePage />} />
         <Route
           path={ROUTE.FAVORITES}

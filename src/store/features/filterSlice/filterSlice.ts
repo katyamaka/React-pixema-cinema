@@ -1,7 +1,7 @@
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { MovieInfo, ResponseApi, MovieTypes } from "./../../../types";
-// import { OmdbAPI, transformShortMovieInfo } from "services"; не работает сделать по-другому первое удалить
+// import { OmdbAPI, transformShortMovieInfo } from "services"; не работает  сделать по-другому первое удалить
 import { AxiosError } from "axios";
 // import { RootState } from "../../store"; вопросы
 

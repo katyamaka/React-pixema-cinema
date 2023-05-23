@@ -26,7 +26,7 @@ export const Header = () => {
       >
         {darkThemeStore ? <PixemaDarkIcon /> : <PixemaLightIcon />}
       </StyledLogo>
-      <Search />
+      {/* <Search /> это я сделаю в четверг  */}
       {width && width <= 1280 ? <BurgerButton /> : <UserProfile />}
     </HeaderStyled>
   );
