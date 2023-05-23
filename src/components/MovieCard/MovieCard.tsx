@@ -1,6 +1,6 @@
 import { generatePath, Link } from "react-router-dom";
 import { ROUTE } from "../../routes";
-import { IMovie } from "../../types";
+import { MovieInfo } from "../../types";
 import {
   CardPoster,
   Title,
@@ -15,7 +15,7 @@ import { deleteFavoriteMovie, useTypedDispatch } from "../../store";
 import { CloseIcon } from "../../assets";
 
 interface IProps {
-  movie: IMovie;
+  movie: MovieInfo;
   showDeleteFromFavorites?: boolean;
 }
 export const MovieCard = ({
