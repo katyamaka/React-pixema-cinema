@@ -1,5 +1,5 @@
 import { Media } from "./media";
-import { css } from "styled-components";
+import { css, CSSObject } from "styled-components";
 
 export const H1 = css`
   font-weight: 600;
@@ -70,3 +70,19 @@ export const B = css`
   font-size: 16px;
   line-height: 24px;
 `;
+
+export const BADGE = css`
+  font-family: "Exo2", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+`;
+
+export const INPUT_CSS_OBJECT: CSSObject = {
+  fontWeight: "500",
+  fontSize: "16px",
+  lineHeight: "24px",
+  fontFamily: '"Exo2 Regular", sans-serif',
+};
+
+export const INPUT = css(INPUT_CSS_OBJECT);

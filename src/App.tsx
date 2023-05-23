@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
+import { useTypedSelector } from "store";
+import { useEffect } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export const App = () => {
+  const isAuth = useTypedSelector((state) => state.user.isAuth);
+  const useDarkTheme = useTypedSelector((state) => state.user.useDarkTheme);
 
-export default App;
+  useEffect(() => {
+    document.documentElement.setAttribute(
+      "theme",
+      useDarkTheme ? "dark" : "light"
+    );
+  }, [useDarkTheme]);
+
+  if (isAuth === undefined) {
+    return null;
+  } else {
+    return <RouterProvider router={router} />;
+  }
+};
