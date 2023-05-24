@@ -5,7 +5,7 @@ import {
   fetchFavorites,
   getFirebaseErrorMessage,
   IFavoriteMovieModel,
-} from "services"; в процессе в другой папке 2
+} from "../../../services"; в процессе в другой папке 2
 import { RootState } from "../../store";
 
 export interface FavoritesState {

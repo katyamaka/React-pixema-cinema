@@ -1,4 +1,4 @@
-interface FullMovieInfoApi {
+export interface FullMovieInfoApi {
   Title: string;
   Year: string;
   Rated: string;
@@ -24,7 +24,7 @@ interface FullMovieInfoApi {
   Error?: string;
 }
 
-enum Rating {
+export enum PgRating {
   pg13,
   g,
   pg,
@@ -33,10 +33,10 @@ enum Rating {
   notRated,
 }
 
-interface FullMovieInfo {
+export interface FullMovieInfo {
   title: string;
   year: string;
-  rated: Rating;
+  rated: PgRating;
   released: string;
   runtime: string;
   genres: string[];
@@ -57,7 +57,7 @@ interface FullMovieInfo {
   boxOffice: string;
 }
 
-interface MovieInfo {
+export interface MovieInfo {
   title: string;
   year: string;
   imdbId: string;
@@ -65,7 +65,7 @@ interface MovieInfo {
   poster: string;
 }
 
-interface MovieInfoApi {
+export interface MovieInfoApi {
   Title: string;
   Year: string;
   imdbID: string;
@@ -73,38 +73,27 @@ interface MovieInfoApi {
   Poster: string;
 }
 
-interface ResponseApi {
+export interface ResponseApi {
   Search: MovieInfoApi[];
   totalResults: string;
   Response: "True" | "False";
   Error?: string;
 }
 
-interface RatingApi {
+export interface RatingApi {
   Source: string;
   Value: string;
 }
 
-enum MovieTypes {
+export enum MovieTypes {
   movie = "movie",
   series = "series",
   episode = "episode",
 }
 
-interface SearchMoviesProps {
+export interface SearchMoviesProps {
   keyword: string;
   yearOfRelease?: string | null;
   type?: MovieTypes | null;
   page?: number;
 }
-
-export type {
-  SearchMoviesProps,
-  MovieTypes,
-  ResponseApi,
-  MovieInfoApi,
-  MovieInfo,
-  FullMovieInfo,
-  Rating,
-  FullMovieInfoApi,
-};
