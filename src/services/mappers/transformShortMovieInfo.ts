@@ -1,8 +1,5 @@
-import { IMovie, IShortMovieInfoDto } from "../../types";
-
-export const transformShortMovieInfo = (
-  movies: IShortMovieInfoDto[]
-): IMovie[] =>
+import { MovieInfo, MovieInfoApi } from "../../types";
+export const transformShortMovieInfo = (movies: MovieInfoApi[]): MovieInfo[] =>
   movies.map(({ Title, Year, Type, Poster, imdbID: imdbId }) => ({
     imdbId,
     title: Title,
