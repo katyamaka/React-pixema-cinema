@@ -1,6 +1,6 @@
 import { RootState } from "../store";
 import { filterInitialState } from "../features/filterSlice/filterSlice";
-import { ICustomSelectOption } from "components";
+import { ICustomSelectOption } from "../../components";
 
 export const getFilterActivationState = (state: RootState) => {
   const { yearOfRelease: initialYarOfRelease, type: initialType } =
