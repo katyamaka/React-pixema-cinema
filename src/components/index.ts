@@ -4,7 +4,7 @@ import { Header } from "./Header/Header";
 import { Main } from "./Main/Main";
 import { CustomNavLink } from "./CustomNavLink/CustomNavLink";
 import { Footer } from "./Footer/Footer";
-
+export * from "./UserSettingsButton/UserSettingsButton";
 export * from "./Divider/Divider";
 export * from "./Button/Button";
 export * from "./CustomLink/CustomLink";
