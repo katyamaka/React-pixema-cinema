@@ -8,5 +8,7 @@ import { Footer } from "./Footer/Footer";
 export * from "./Divider/Divider";
 export * from "./Button/Button";
 export * from "./CustomLink/CustomLink";
+export * from "./InitialsAvatar/InitialsAvatar";
+export * from "./CustomSelect/CustomSelect";
 
 export { MovieCard, Nav, Header, Main, CustomNavLink, Footer };
