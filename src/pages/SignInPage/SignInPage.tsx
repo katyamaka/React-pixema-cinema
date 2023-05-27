@@ -87,7 +87,7 @@ export const SignInPage = () => {
           <Button type="submit">Sign In</Button>
           <TextFooter>
             Don’t have an account?
-            <Link to={generatePath(ROUTE.HOME + ROUTE.SIGN_UP)}>Sign Up</Link>
+            <Link to={generatePath(ROUTE.SIGN_UP)}>Sign Up</Link>
           </TextFooter>
         </FormFooter>
       </SignInForm>

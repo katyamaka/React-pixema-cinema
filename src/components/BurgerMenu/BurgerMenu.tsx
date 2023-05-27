@@ -37,15 +37,15 @@ export const BurgerMenu = ({ closeMenu }: Props) => {
           <HomeIcon />
           Home
         </CustomNavLink>
-        <CustomNavLink to={ROUTE.HOME + ROUTE.TRENDS}>
+        <CustomNavLink to={ROUTE.TRENDS}>
           <TrendsIcon />
           Trends
         </CustomNavLink>
-        <CustomNavLink to={ROUTE.HOME + ROUTE.FAVORITES}>
+        <CustomNavLink to={ROUTE.FAVORITES}>
           <FavoritesIcon />
           Favorites
         </CustomNavLink>
-        <CustomNavLink to={ROUTE.HOME + ROUTE.SETTINGS}>
+        <CustomNavLink to={ROUTE.SETTINGS}>
           <SettingsIcon />
           Settings
         </CustomNavLink>

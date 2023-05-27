@@ -35,7 +35,7 @@ export const MovieItem = memo(
 
     return (
       <StyledMovieItem variants={movie} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-        <Link to={generatePath(ROUTE.HOME + ROUTE.DETAILS, { imdb: imdbID })}>
+        <Link to={generatePath(ROUTE.DETAILS, { imdb: imdbID })}>
           <PosterContainer>
             <MoviePoster src={poster === "N/A" ? NoImageAvailableImg : poster} alt={title} />
             {isFavorite && isAuth && <FavoriteFilmIcon />}
