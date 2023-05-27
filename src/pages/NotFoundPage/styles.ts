@@ -7,13 +7,12 @@ const StyledNotFoundPage = styled.div`
   align-items: center;
   min-height: 100vh;
   padding: 20px;
-  background-color: white;
+  background-color: grey;
 `;
 
 const ErrorCode = styled.span`
   font-size: 7rem;
-
-  color: ${Color.WHITE};
+  color: black;
 `;
 
 const NotFoundMessageContainer = styled.div`
