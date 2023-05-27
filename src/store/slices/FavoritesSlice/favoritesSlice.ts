@@ -15,11 +15,11 @@ const setFavoritesMovies = (favoritesMovies: Movie[]) => {
   localStorage.setItem("favorites", JSON.stringify(favoritesMovies));
 };
 
-interface IFavoritesState {
+interface FavoritesState {
   favoritesMovies: Movie[];
 }
 
-const initialState: IFavoritesState = {
+const initialState: FavoritesState = {
   favoritesMovies: initFavorites(),
 };
 
