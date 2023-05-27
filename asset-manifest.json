@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.js": "/static/js/main.fccbb727.js",
-    "static/media/background.png": "/static/media/background.ac3b7d52f053ac987825.png",
-    "static/media/no-image-available.jpg": "/static/media/no-image-available.3b761139021479f68ed7.jpg",
-    "static/media/empty-favorites.svg": "/static/media/empty-favorites.d675174e548f560a43b95ccb24b4e1c5.svg",
-    "static/media/pixema-logo.svg": "/static/media/pixema-logo.a93fab9537ac658ff62c0b350ffe409f.svg",
-    "static/media/settings.svg": "/static/media/settings.c926780a7bc919f71b4db92c2bfca5e0.svg",
-    "static/media/imdb.svg": "/static/media/imdb.58444fd8d2f8f69876ca64b6261dde9a.svg",
-    "static/media/close.svg": "/static/media/close.bf7367d1a24a6b8635a7f285a24a5079.svg",
-    "static/media/trends.svg": "/static/media/trends.a9d460fabd9b1c3d46591a3c28db41e8.svg",
-    "static/media/home.svg": "/static/media/home.b6b597feb47125b1df11379c6685ac02.svg",
-    "index.html": "/index.html",
-    "static/media/favorite-film.svg": "/static/media/favorite-film.90ff846dfb605255b2dee4901b43e6a4.svg",
-    "static/media/favorites.svg": "/static/media/favorites.68d38c3ab7c84d17472cfab91cf588b8.svg",
-    "static/media/not-authorized-user.svg": "/static/media/not-authorized-user.a3867c46a05515d83bd9fe2a072c9723.svg",
-    "static/media/show-more.svg": "/static/media/show-more.1d6e177f9b44523e95d60900264caddf.svg",
-    "static/media/next-arrow.svg": "/static/media/next-arrow.f58780250c373f06521d450484861c1a.svg",
-    "static/media/search-settings.svg": "/static/media/search-settings.a628ca3e3aa3b2601aba441b840aed98.svg",
-    "static/media/burger.svg": "/static/media/burger.31c808eae2a074639a3076cebc3b91f9.svg",
-    "static/media/user-menu-arrow.svg": "/static/media/user-menu-arrow.fd29f2ceb6ccc1cd24a9ca54cea8962d.svg",
-    "main.fccbb727.js.map": "/static/js/main.fccbb727.js.map"
+    "main.js": "/React-pixema-cinema/static/js/main.fa977880.js",
+    "static/media/background.png": "/React-pixema-cinema/static/media/background.ac3b7d52f053ac987825.png",
+    "static/media/no-image-available.jpg": "/React-pixema-cinema/static/media/no-image-available.3b761139021479f68ed7.jpg",
+    "static/media/empty-favorites.svg": "/React-pixema-cinema/static/media/empty-favorites.d675174e548f560a43b95ccb24b4e1c5.svg",
+    "static/media/pixema-logo.svg": "/React-pixema-cinema/static/media/pixema-logo.a93fab9537ac658ff62c0b350ffe409f.svg",
+    "static/media/settings.svg": "/React-pixema-cinema/static/media/settings.c926780a7bc919f71b4db92c2bfca5e0.svg",
+    "static/media/imdb.svg": "/React-pixema-cinema/static/media/imdb.58444fd8d2f8f69876ca64b6261dde9a.svg",
+    "static/media/close.svg": "/React-pixema-cinema/static/media/close.bf7367d1a24a6b8635a7f285a24a5079.svg",
+    "static/media/trends.svg": "/React-pixema-cinema/static/media/trends.a9d460fabd9b1c3d46591a3c28db41e8.svg",
+    "index.html": "/React-pixema-cinema/index.html",
+    "static/media/home.svg": "/React-pixema-cinema/static/media/home.b6b597feb47125b1df11379c6685ac02.svg",
+    "static/media/favorite-film.svg": "/React-pixema-cinema/static/media/favorite-film.90ff846dfb605255b2dee4901b43e6a4.svg",
+    "static/media/favorites.svg": "/React-pixema-cinema/static/media/favorites.68d38c3ab7c84d17472cfab91cf588b8.svg",
+    "static/media/not-authorized-user.svg": "/React-pixema-cinema/static/media/not-authorized-user.a3867c46a05515d83bd9fe2a072c9723.svg",
+    "static/media/show-more.svg": "/React-pixema-cinema/static/media/show-more.1d6e177f9b44523e95d60900264caddf.svg",
+    "static/media/next-arrow.svg": "/React-pixema-cinema/static/media/next-arrow.f58780250c373f06521d450484861c1a.svg",
+    "static/media/search-settings.svg": "/React-pixema-cinema/static/media/search-settings.a628ca3e3aa3b2601aba441b840aed98.svg",
+    "static/media/burger.svg": "/React-pixema-cinema/static/media/burger.31c808eae2a074639a3076cebc3b91f9.svg",
+    "static/media/user-menu-arrow.svg": "/React-pixema-cinema/static/media/user-menu-arrow.fd29f2ceb6ccc1cd24a9ca54cea8962d.svg",
+    "main.fa977880.js.map": "/React-pixema-cinema/static/js/main.fa977880.js.map"
   },
   "entrypoints": [
-    "static/js/main.fccbb727.js"
+    "static/js/main.fa977880.js"
   ]
 }
