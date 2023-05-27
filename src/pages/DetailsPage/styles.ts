@@ -20,7 +20,7 @@ const AddFavoriteButton = styled.button<{ $isAuth?: boolean }>`
   padding: 19px;
   border-radius: 10px;
   border: none;
-  background-color: ${Color.LIGHT};
+  background-color: ${Color.DARK};
   cursor: pointer;
 `;
 

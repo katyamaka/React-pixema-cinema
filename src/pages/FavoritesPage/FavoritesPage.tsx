@@ -14,7 +14,7 @@ export const FavoritesPage = () => {
       ) : (
         <EmptyFavoritesContainer>
           <EmptyFavoritesIcon />
-          <EmptyText>Oops, nothing here yet. </EmptyText>
+          <EmptyText>Nothing here yet </EmptyText>
         </EmptyFavoritesContainer>
       )}
     </StyledFavoritesPage>
