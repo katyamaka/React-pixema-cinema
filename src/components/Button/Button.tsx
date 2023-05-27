@@ -1,6 +1,16 @@
-import { ButtonStyled } from "./styles";
-import { ButtonHTMLAttributes } from "react";
+import { StyledButton } from "./styles";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 
-export const Button = (props: ButtonHTMLAttributes<HTMLButtonElement>) => {
-  return <ButtonStyled {...props}>{props.children}</ButtonStyled>;
+interface Props {
+  children: ReactNode;
+  type?: ButtonHTMLAttributes<HTMLButtonElement>["type"];
+  onClick?: () => void;
+}
+
+export const Button = ({ children, onClick, type = "submit" }: Props) => {
+  return (
+    <StyledButton onClick={onClick} type={type}>
+      {children}
+    </StyledButton>
+  );
 };

@@ -1,21 +1,19 @@
 import { HomePage } from "./HomePage/HomePage";
-import { FavouritesPage } from "./FavoritesPage/FavoritesPage";
-import { MovieDetailsPage } from "./MovieDetailsPage/MovieDetailsPage";
-import { ResetPasswordPage } from "./ResetPasswordPage/ResetPasswordPage";
-import { SearchPage } from "./SearchPage/SearchPage";
+import { NotFoundPage } from "./NotFoundPage/NotFoundPage";
 import { SettingsPage } from "./SettingsPage/SettingsPage";
-import { SignInPage } from "./SignInPage/SignInPage";
-import { SignUpPage } from "./SignUpPage/SignUpPage";
+import { FavoritesPage } from "./FavoritesPage/FavoritesPage";
 import { TrendsPage } from "./TrendsPage/TrendsPage";
+import { SignInPage } from "./SignInPage/SignInPage";
+import { DetailsPage } from "./DetailsPage/DetailsPage";
+import { SignUpPage } from "./SignUpPage/SignUpPage";
 
 export {
   HomePage,
-  FavouritesPage,
-  TrendsPage,
-  ResetPasswordPage,
-  SearchPage,
+  NotFoundPage,
   SettingsPage,
+  FavoritesPage,
+  TrendsPage,
   SignInPage,
+  DetailsPage,
   SignUpPage,
-  MovieDetailsPage,
 };

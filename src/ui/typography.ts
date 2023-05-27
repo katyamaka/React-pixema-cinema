@@ -1,88 +1,81 @@
+import { css } from "styled-components";
 import { Media } from "./media";
-import { css, CSSObject } from "styled-components";
+import { Color } from "./colors";
 
-export const H1 = css`
+const H1 = css`
+  font-family: "Exo 2";
+  font-style: normal;
   font-weight: 600;
   font-size: 40px;
   line-height: 60px;
-  font-family: "Exo2", sans-serif;
-  ${Media.Mobile} {
+
+  ${Media.MD} {
     font-size: 32px;
     line-height: 48px;
   }
-  ${Media.Tablet} {
+
+  ${Media.XXS} {
     font-size: 28px;
     line-height: 42px;
   }
 `;
 
-export const H2 = css`
+const H2 = css`
+  font-family: "Exo 2";
+  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  font-family: "Exo2", sans-serif;
-  ${Media.Mobile} {
+
+  ${Media.XXS} {
     font-size: 20px;
   }
 `;
 
-export const H3 = css`
+const H3 = css`
+  font-family: "Exo 2";
+  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
-  font-family: "Exo2", sans-serif;
-  ${Media.Mobile} {
+
+  ${Media.XXS} {
     font-size: 18px;
     line-height: 28px;
   }
 `;
 
-export const S1 = css`
-  font-family: "Exo2", sans-serif;
+const S1 = css`
+  font-family: "Exo 2";
+  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
 `;
 
-export const S1_2 = css`
-  font-family: "Exo2", sans-serif;
+const S2 = css`
+  font-family: "Exo 2";
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
 `;
-export const S1_3 = css`
+
+const S3 = css`
+  font-family: "Exo 2";
+  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Exo2", sans-serif;
 `;
 
-export const S1_4 = css`
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Exo2", sans-serif;
-`;
-
-export const B = css`
-  font-family: "Exo2", sans-serif;
+const B1 = css`
+  font-family: "Exo 2", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: ${Color.WHITE_THEME};
 `;
 
-export const BADGE = css`
-  font-family: "Exo2", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-`;
-
-export const INPUT_CSS_OBJECT: CSSObject = {
-  fontWeight: "500",
-  fontSize: "16px",
-  lineHeight: "24px",
-  fontFamily: '"Exo2 Regular", sans-serif',
-};
-
-export const INPUT = css(INPUT_CSS_OBJECT);
+export const Typography = { H1, H2, H3, S1, S2, S3, B1 };

@@ -1,14 +1,39 @@
-import { MovieCard } from "./MovieCard/MovieCard";
-import { Nav } from "./Nav/Nav";
-import { Header } from "./Header/Header";
-import { Main } from "./Main/Main";
+import { Input } from "./Input/Input";
+import { Navigation } from "./Navigation/Navigation";
 import { CustomNavLink } from "./CustomNavLink/CustomNavLink";
-import { Footer } from "./Footer/Footer";
-export * from "./UserSettingsButton/UserSettingsButton";
-export * from "./Divider/Divider";
-export * from "./Button/Button";
-export * from "./CustomLink/CustomLink";
-export * from "./InitialsAvatar/InitialsAvatar";
-export * from "./CustomSelect/CustomSelect";
+import { RequareAuth } from "./RequareAuth/RequareAuth";
+import { SideMenu } from "./SideMenu/SideMenu";
+import { Button } from "./Button/Button";
+import { MovieItem } from "./MovieItem/MovieItem";
+import { MovieList } from "./MovieList/MovieList";
+import { PixemaLogo } from "./PixemaLogo/PixemaLogo";
+import { Header } from "./Header/Header";
+import { ThemeToggler } from "./ThemeToggler/ThemeToggler";
+import { Portal } from "./Portal/Portal";
+import { ModalWrapper } from "./Wrapper/ModalWrapper";
+import { AuthDetails } from "./AuthDetails/AuthDetails";
+import { Spinner } from "./Spinner/Spinner";
+import { ShowMoreButton } from "./ShowMoreButton/ShowMoreButton";
+import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
+import { DropdownMenu } from "./Menu/DropdownMenu";
 
-export { MovieCard, Nav, Header, Main, CustomNavLink, Footer };
+export {
+  DropdownMenu,
+  BurgerMenu,
+  Spinner,
+  AuthDetails,
+  ModalWrapper,
+  Portal,
+  ThemeToggler,
+  Header,
+  PixemaLogo,
+  Input,
+  Navigation,
+  CustomNavLink,
+  ShowMoreButton,
+  RequareAuth,
+  SideMenu,
+  Button,
+  MovieItem,
+  MovieList,
+};

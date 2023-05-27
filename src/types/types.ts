@@ -1,4 +1,12 @@
-export interface FullMovieInfoApi {
+export interface MovieAPI {
+  Title: string;
+  Year: string;
+  imdbID: string;
+  Type: string;
+  Poster: string;
+}
+
+export interface MovieDetailsAPI {
   Title: string;
   Year: string;
   Rated: string;
@@ -13,7 +21,7 @@ export interface FullMovieInfoApi {
   Country: string;
   Awards: string;
   Poster: string;
-  Ratings: RatingApi[];
+  Ratings: Rating[];
   Metascore: string;
   imdbRating: string;
   imdbVotes: string;
@@ -21,79 +29,50 @@ export interface FullMovieInfoApi {
   Type: string;
   DVD: string;
   BoxOffice: string;
-  Error?: string;
+  Production: string;
+  Website: string;
+  Response: string;
 }
 
-export enum PgRating {
-  pg13,
-  g,
-  pg,
-  r,
-  nc17,
-  notRated,
-}
-
-export interface FullMovieInfo {
-  title: string;
-  year: string;
-  rated: PgRating;
-  released: string;
-  runtime: string;
-  genres: string[];
-  director: string;
-  writer: string;
-  actors: string[];
-  plot: string;
-  language: string;
-  country: string;
-  awards: string;
-  poster: string;
-  metaScore: string;
-  imdbRating: string;
-  imdbVotes: string;
-  imdbId: string;
-  type: string;
-  dvd: string;
-  boxOffice: string;
-}
-
-export interface MovieInfo {
-  title: string;
-  year: string;
-  imdbId: string;
-  type: string;
-  poster: string;
-}
-
-export interface MovieInfoApi {
-  Title: string;
-  Year: string;
-  imdbID: string;
-  Type: string;
-  Poster: string;
-}
-
-export interface ResponseApi {
-  Search: MovieInfoApi[];
-  totalResults: string;
-  Response: "True" | "False";
-  Error?: string;
-}
-
-export interface RatingApi {
+export interface Rating {
   Source: string;
   Value: string;
 }
 
-export enum MovieTypes {
-  movie = "movie",
-  series = "series",
-  episode = "episode",
+export interface Movie {
+  title: string;
+  year: string;
+  imdbID: string;
+  type: string;
+  poster: string;
 }
 
-export interface SearchMoviesProps {
-  keyword: string;
-  yearOfRelease?: string | null;
-  type?: MovieTypes | null;
-  page?: number;
+export interface MovieDetails {
+  title: string;
+  year: string;
+  released: string;
+  runtime: string;
+  genre: string;
+  director: string;
+  writer: string;
+  actors: string;
+  plot: string;
+  boxOffice: string;
+  country: string;
+  imdbRating: string;
+  poster: string;
+  imdbID: string;
+  type: string;
+}
+
+export interface User {
+  name: string;
+  email: string;
+  isAuth: boolean;
+}
+
+export interface Params {
+  search: string;
+  page: number;
+  type: string;
 }
