@@ -9,7 +9,7 @@ export const NotFoundPage = () => {
         <ErrorCode>404</ErrorCode>
         <NotFoundMessage>Not found</NotFoundMessage>
         <NotFoundMessage>
-          Let's go <Link to={ROUTE.HOME}>home</Link> and try from there.
+          Wrong link, go <Link to={ROUTE.HOME}>here</Link> and try again.
         </NotFoundMessage>
       </NotFoundMessageContainer>
     </StyledNotFoundPage>

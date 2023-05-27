@@ -8,7 +8,7 @@ const StyledNotFoundPage = styled.div`
   align-items: center;
   min-height: 100vh;
   padding: 20px;
-  background-color: #95c2de;
+  background-color: white;
 `;
 
 const ErrorCode = styled.span`
@@ -22,7 +22,6 @@ const NotFoundMessageContainer = styled.div`
   grid-template-rows: repeat(3, auto);
   row-gap: 25px;
   justify-items: center;
-
   max-width: 500px;
 `;
 
