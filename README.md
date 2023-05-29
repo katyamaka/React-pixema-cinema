@@ -8,7 +8,7 @@ You can use your key, just open the ".ENV" and put your key there (after you get
 You can visit Pixema App online using this link: https://katyamaka.github.io/React-pixema-cinema/
 
 <div  align="center">
-<img src="src/assets/icons/pixema-logo.svg" alt="Logo" width="200" height="125">
+<img src="readme/pixema.png" alt="Logo" width="200" height="125">
 <h1 align="center">
   <a href="https://github.com/katyamaka/React-pixema-cinema">
     
