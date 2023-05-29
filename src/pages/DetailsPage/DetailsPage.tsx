@@ -1,16 +1,25 @@
-import { CloseIcon, FavoritesIcon, IMDbIcon } from "assets";
+import { CloseIcon, FavoritesIcon, IMDbIcon, NextSlideIcon } from "assets";
 import { Header, Spinner } from "components";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import {
   addFavorite,
+  fetchMovies,
   removeFavorite,
   selectAccount,
   selectMovieDetails,
+  selectMovies,
   useAppDispatch,
   useAppSelector,
 } from "store";
-
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+  Image,
+} from "pure-react-carousel";
 import { fetchMovieDetails } from "store";
 import {
   DetailsContainer,
@@ -28,14 +37,18 @@ import {
   Plot,
   OtherDetails,
   Info,
+  Carousel,
   AddFavoriteButton,
   RemoveFavoriteButton,
 } from "./styles";
-import { checkFavorites } from "utils";
+import { useWindowSize } from "hooks";
+import { checkFavorites, getRandomMovieKeyWord } from "utils";
 
 export const DetailsPage = () => {
   const dispatch = useAppDispatch();
+  const { width = 0 } = useWindowSize();
   const { movieDetails, error, isLoading } = useAppSelector(selectMovieDetails);
+  const { movies } = useAppSelector(selectMovies);
   const { imdb = "" } = useParams();
   const { isAuth } = useAppSelector(selectAccount);
 
@@ -55,7 +68,7 @@ export const DetailsPage = () => {
     dispatch(addFavorite(movieInfo));
   };
 
-  const handleRemoveFavorite = () => {
+  const handleRemoveFavorrite = () => {
     const movieInfo = {
       title: title,
       year: year,
@@ -95,7 +108,7 @@ export const DetailsPage = () => {
           <DetailsHeader>
             <GenreList>
               {genre?.split(", ").map((genre) => (
-                <GenreItem key={genre}>{genre} •</GenreItem>
+                <GenreItem key={genre}>{genre}•</GenreItem>
               ))}
             </GenreList>
             <MovieTitle>{title}</MovieTitle>
@@ -110,7 +123,7 @@ export const DetailsPage = () => {
           <DetailsPreview>
             <MoviePoster src={poster} />
             {checkFavorites(imdbID) ? (
-              <RemoveFavoriteButton onClick={handleRemoveFavorite}>
+              <RemoveFavoriteButton onClick={handleRemoveFavorrite}>
                 <CloseIcon />
               </RemoveFavoriteButton>
             ) : (
@@ -140,7 +153,25 @@ export const DetailsPage = () => {
               <Info>{director}</Info>
               <Info>Writers</Info>
               <Info>{writer}</Info>
+              <Info>RECOMMENDATIONS</Info>
             </OtherDetails>
+            <Carousel
+              naturalSlideHeight={357}
+              naturalSlideWidth={266}
+              totalSlides={movies.length}
+              visibleSlides={width >= 768 && width < 1440 ? 2 : width >= 1440 ? 4 : 1}
+            >
+              <Info> RECOMMENDATIONS</Info>
+              <ButtonBack>Previous</ButtonBack>
+              <ButtonNext>Next</ButtonNext>
+              <Slider style={{ gridColumn: "span 8" }}>
+                {movies.map((movie, index) => (
+                  <Slide index={index} key={movie.imdbID}>
+                    <Image hasMasterSpinner={false} src={movie.poster} />
+                  </Slide>
+                ))}
+              </Slider>
+            </Carousel>
           </MovieInfo>
         </DetailsContainer>
       )}

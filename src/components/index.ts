@@ -16,6 +16,7 @@ import { Spinner } from "./Spinner/Spinner";
 import { ShowMoreButton } from "./ShowMoreButton/ShowMoreButton";
 import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
 import { DropdownMenu } from "./Menu/DropdownMenu";
+import { SmallSpinner } from "./SmallSpinner/SmallSpinner";
 
 export {
   DropdownMenu,
@@ -36,4 +37,5 @@ export {
   Button,
   MovieItem,
   MovieList,
+  SmallSpinner,
 };

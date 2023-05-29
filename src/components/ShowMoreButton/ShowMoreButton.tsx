@@ -1,7 +1,15 @@
-import React from "react";
+import { SmallSpinner } from "components";
+import { StyledShowMoreButton } from "./styles";
 
-export const ShowMoreButton = () => {
-  return <div>ShowMoreButton</div>;
+interface Props {
+  onClick: () => void;
+  isMoreLoading?: boolean;
+}
+
+export const ShowMoreButton = ({ onClick, isMoreLoading }: Props) => {
+  return (
+    <StyledShowMoreButton onClick={onClick} disabled={isMoreLoading}>
+      Show more <SmallSpinner />
+    </StyledShowMoreButton>
+  );
 };
-
-// отдельным компонентом сделать на выхах красивую кнопку

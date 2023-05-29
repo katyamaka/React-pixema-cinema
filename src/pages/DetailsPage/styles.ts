@@ -1,6 +1,15 @@
 import styled from "styled-components";
 import { Media, Color, Typography } from "ui";
-import { CarouselProvider } from "pure-react-carousel";
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+  Image,
+} from "pure-react-carousel";
+
+import "pure-react-carousel/dist/react-carousel.es.css";
 
 const StyledDetailsPage = styled.div`
   display: grid;
@@ -20,13 +29,12 @@ const AddFavoriteButton = styled.button<{ $isAuth?: boolean }>`
   padding: 19px;
   border-radius: 10px;
   border: none;
-  background-color: ${Color.DARK};
-  cursor: pointer;
+  background-color: ${Color.LIGHT};
+
+  cursor: ${($isAuth) => ($isAuth ? "pointer" : "not-allowed")};
 `;
 
-const RemoveFavoriteButton = styled(AddFavoriteButton)`
-  background-color: ${Color.DARK};
-`;
+const RemoveFavoriteButton = styled(AddFavoriteButton)``;
 
 const DetailsContainer = styled.div`
   display: grid;
@@ -81,11 +89,12 @@ const HeaderInfo = styled.div`
 
 const Raiting = styled.span`
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
   column-gap: 10px;
   padding: 8px;
-  background-color: ${Color.GREEN};
+  background-color: #323537;
   border-radius: 6px;
+  background-color: ${Color.GREEN};
   color: ${Color.DARK_THEME};
 
   svg path {
@@ -116,7 +125,11 @@ const Runtime = styled.span`
   background-color: #323537;
 `;
 
-const MovieTitle = styled.h3``;
+const MovieTitle = styled.h3`
+  color: ${Color.WHITE};
+  margin-top: 20px;
+  margin-bottom: 20px;
+`;
 
 const DetailsPreview = styled.div`
   display: grid;
@@ -147,8 +160,6 @@ const MoviePoster = styled.img`
 const Carousel = styled(CarouselProvider)`
   display: grid;
   grid-template-rows: auto 1fr;
-  width: 60px;
-  color: black;
 `;
 
 const OtherDetails = styled.div`

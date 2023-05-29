@@ -1,4 +1,4 @@
-import { Header, MovieList, Spinner } from "components";
+import { Header, MovieList, ShowMoreButton, Spinner } from "components";
 import { useEffect, useState } from "react";
 import { selectMovies, useAppDispatch, useAppSelector } from "store";
 import { fetchMovies } from "store";
@@ -47,10 +47,7 @@ export const HomePage = () => {
       {isLoading && <Spinner />}
       {error && <ErrorText>{error}</ErrorText>}
       {movies && movies.length > 0 && <MovieList movies={movies} />}
-      <StyledButton onClick={handleShowMore}>
-        {" "}
-        Show more <ShowMore></ShowMore>
-      </StyledButton>
+      {!isLoading && !error && <ShowMoreButton onClick={handleShowMore} />}
     </StyledHomePage>
   );
 };
