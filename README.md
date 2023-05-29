@@ -16,3 +16,5 @@ This pixema project was made by using:
 
 API for this project - https://www.omdbapi.com/
 You can use your key, just open the ".ENV" and put your key there (after you get it). Request limit per day - 1000.
+
+You can visit Pixema App online using this link: https://katyamaka.github.io/React-pixema-cinema/
