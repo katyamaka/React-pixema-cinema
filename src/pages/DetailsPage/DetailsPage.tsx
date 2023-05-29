@@ -162,8 +162,8 @@ export const DetailsPage = () => {
               visibleSlides={width >= 768 && width < 1440 ? 2 : width >= 1440 ? 4 : 1}
             >
               <Info> RECOMMENDATIONS</Info>
-              <ButtonBack>Previous</ButtonBack>
-              <ButtonNext>Next</ButtonNext>
+              <ButtonBack>Previous </ButtonBack>
+              <ButtonNext>Next </ButtonNext>
               <Slider style={{ gridColumn: "span 8" }}>
                 {movies.map((movie, index) => (
                   <Slide index={index} key={movie.imdbID}>
