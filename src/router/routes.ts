@@ -6,6 +6,6 @@ export enum ROUTE {
   NOT_FOUND = "*",
   DETAILS = "movies/:imdb",
   SIGN_IN = "/sign-in",
-  SIGN_OUT = "sign-out",
+  SIGN_OUT = "/sign-out",
   SIGN_UP = "/sign-up",
 }
